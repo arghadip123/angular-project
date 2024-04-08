@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="login.component.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <title>Login Form</title>
   
 </head>
 <body>
   <div class="container">
-    <h2 class="center">Login</h2>
-    <form action="/login" method="post">
-      <div>
-        <label for="mobile">Mobile Number:</label>
-        <input type="text" id="mobile" name="mobile" required>
+    <h3 class="center" style="color: rgb(10, 139, 55) ">User Login</h3>
+    <br>
+    <form action="/otp" method="post" >
+      <div class="div1">
+        <span><i class="icon2 fa-solid fa-envelope fa-lg"></i></span>
+        <span><input type="text" id="email" placeholder="enter your email id" required></span>
+      </div>
+      <div class="div1">
+        <span><i class="icon fa fa-mobile fa-lg"></i> </span>
+        <span> <input type="number" id="mobile" name="mobile" pattern="[0-9]{10}"  max="9999999999" placeholder="enter your 10 digit mobile no" required></span>
       </div>
       <div>
-        <label for="otp">Enter OTP:</label>
-        <input type="text" id="otp" name="otp" required>
-      </div>
-      <div class="center"> 
-        <button type="submit" class="button-secondary">Login</button>
-        <button type="submit" class="button-primary">Signup</button>
-      </div>
+        <!-- <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" name="otp" required> -->
+        <button type="submit" class="button-otp" style = "font-size: small" >Get OTP</button>
 
-      <p style="color:red;"> resend otp? <p>
-      
+      </div>
+      <br> <br>
 
     </form>
+    
+    <div class="center" action="/signup" method="post"> 
+      <!-- <button type="submit" class="button-secondary">Login</button> -->
+      
+      <p> didn't have an account? <button type="submit" class="button-primary">Signup</button> </p>
+      
+    </div>
   </div>
 </body>
 </html>
