@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.component.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container"> 
+        <h1 class="center">Application Details</h1>
+                <form action="your-backend-url/registration" method="post" class="form-box">
+                    <!-- initial -->
+                    <label for="initial" >Initial:</label>
+                    <select type="text" id="initial" name="initial">
+                        <option value="">-select-</option>
+                        <option value="Mr">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                   <!-- first name -->
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="enter your  first name" required>
+
+                   <!-- last name -->
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="enter your last name" required>
+                    
+                    <!-- address -->
+                    <label for="postalAddress">Postal Address:</label>
+                    <textarea class="address" id="postalAddress" name="postalAddress" rows="6" placeholder="enter your address"></textarea>
+
+                    <!-- poloce station -->
+                    <label for="police station">police station:</label>
+                    <input type="text" id="policestation" name="policestation" placeholder="enter your police station" required>
+                   
+                    <!-- mobile -->
+                    <label for="mobileNumber">mobile Number:</label>
+                    <input type="text" id="number"maxlength="10" pattern="[0-9]{5}-[0-9]{5}"placeholder="enter your mobile number" required>
+                    
+
+        
+                    <!-- state -->
+                    <label for="state">State:</label>
+                    <!-- <input type="text" id="state" name="state" placeholder="enter your state" required> -->
+                    <select type="text" id="state" name="state">
+                        <option value="">-select-</option>
+                        <option value="west bengal">west bengal</option>
+                        <option value="maharastra">maharastra</option>
+                        <option value="tamilnadu">tamilnadu</option>
+                        <option value="punjab">punjab</option>
+
+                    </select>
+
+                    <!-- dist -->
+                    <label for="district">District:</label>
+                    <!-- <input type="text" id="district" name="district"placeholder="enter your district" required> -->
+                    <select type="text" id="state" name="state">
+                        <option value="">-select-</option>
+                        <option value="north 24 pgs">north 24 pgs</option>
+                        <option value="south 24 pgs">south 24 pgs</option>
+                        <option value="darjeeling">darjeeling</option>
+                        <option value="malda">malda</option>
+
+                    </select>
+                    
+                    <!-- pincode -->
+                    <label for="pin">Pin:</label>
+                    <input type="text" id="pin" name="pin" maxlength="10" placeholder="enter your pincode" required>
+
+                    <!-- email -->
+                    <label for="email">E-Mail ID:</label>
+                    <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,7}$" placeholder="enter your email"required>
+                    
+                
+                    <!-- register button -->
+                    <button type="submit" class="center">register</button>
+                </form>
+    </div>
+</body>
+</html>
