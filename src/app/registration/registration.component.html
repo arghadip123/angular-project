@@ -28,28 +28,28 @@
                     <label for="lastName">Last Name:</label>
                     <input type="text" id="lastName" formControlName="lastName" placeholder="enter your last name">
                     <div *ngIf="registrationForm.get('lastname')?.invalid && registrationForm.get('lastname')?.touched"></div>
-                    <span *ngIf="registrationForm.get('lastname') required">lastname is required</span>
+                    <!-- <span *ngIf="registrationForm.get('lastname') required">lastname is required</span> -->
 
                     <!-- address -->
                     <label for="postalAddress">Postal Address:</label>
                     <textarea class="address" id="postalAddress" formControlName="postalAddress" rows="6" placeholder="enter your address"></textarea>
                     <div *ngIf="registrationForm.get('postal address')?.invalid && registrationForm.get('postal address')?.touched"></div>
-                    <span *ngIf="registrationForm.get('postal address') required">postal address is required</span>
+                    <!-- <span *ngIf="registrationForm.get('postal address') required">postal address is required</span> -->
 
                     <!-- poloce station -->
                     <label for="police station">police station:</label>
                     <input type="text" id="policestation" formControlName="policestation" placeholder="enter your police station">
                     <div *ngIf="registrationForm.get('police station')?.invalid && registrationForm.get('police station')?.touched"></div>
-                    <span *ngIf="registrationForm.get('police station') required">police station is required</span>
+                    <!-- <span *ngIf="registrationForm.get('police station') required">police station is required</span> -->
 
                     
                     <!-- mobile -->
                     <label for="mobileNumber">mobile Number:</label>
                     <input type="text" id="number" formControlName="mobilenumber" maxlength="10"placeholder="enter your mobile number">
                     <div *ngIf="registrationForm.get('mobile number')?.invalid && registrationForm.get('mobile number')?.touched"></div>
-                    <span *ngIf="registrationForm.get('mobile number') required">mobile number is required</span>
+                    <!-- <span *ngIf="registrationForm.get('mobile number') required">mobile number is required</span>
                     <span *ngIf="registrationForm.get('mobile number') mobile number">Invalid mobile number format</span>
-                    <span *ngIf="registrationForm.get('mobile number') minlength">mobile number must be at least 10 characters long</span>
+                    <span *ngIf="registrationForm.get('mobile number') minlength">mobile number must be at least 10 characters long</span> -->
                 
                     <!-- state -->
                     <label for="state">State:</label>
@@ -79,9 +79,6 @@
                     <label for="pin">Pin code:</label>
                     <input type="text" id="pincode" formControlName="pincode" maxlength="10" placeholder="enter your pincode">
                     <div *ngIf="registrationForm.get('pincode')?.invalid && registrationForm.get('pincode')?.touched"></div>
-                    <!-- <span *ngIf="registrationForm.get('pincode') required">pincode is required</span>
-                    <span *ngIf="registrationForm.get('pincode') pincode">Invalid pincode format</span>
-                    <span *ngIf="registrationForm.get('pincode') minlength">Pincode must be at least 6 characters long</span> -->
                     <!-- email -->
                     <label for="email">E-Mail ID:</label>
                     <input type="email" id="email"formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,7}$" placeholder="enter your email-id">
@@ -90,7 +87,7 @@
                     <span *ngIf="registrationForm.get('email-id') email-id">Invalid email-id format</span>
 
                     <!-- register button -->
-                    <button type="submit"[disabled]="registrationForm.invalid" class="center">register</button>
+                    <button type="submit" class="center">register</button>
                 </form>
     </div>
 </body>
