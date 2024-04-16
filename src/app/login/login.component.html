@@ -12,7 +12,7 @@
   <div class="container">
     <h3 class="center" style="color: rgb(10, 139, 55) ">User Login</h3>
     <br>
-    <form action="/otp" method="post" >
+    <form action="./otp" method="post" >
       <div class="div1">
         <span><i class="icon2 fa-solid fa-envelope fa-lg"></i></span>
         <span><input type="text" id="email" placeholder="enter your email id" required></span>
@@ -24,18 +24,17 @@
       <div>
         <!-- <label for="otp">Enter OTP:</label>
         <input type="text" id="otp" name="otp" required> -->
-        <button type="submit" class="button-otp" style = "font-size: small" >Get OTP</button>
+        <button type="submit" class="button-otp" style = "font-size: small"  >Get OTP</button>
 
       </div>
       <br> <br>
 
     </form>
     
-    <div class="center" action="/signup" method="post"> 
+    <div class="center"> 
       <!-- <button type="submit" class="button-secondary">Login</button> -->
       
-      <p> didn't have an account? <button type="submit" class="button-primary">Signup</button> </p>
-      
+      <p> didn't have an account? <button type="submit" class="button-primary"  routerLink="/signin"> Sign in </button> </p>
     </div>
   </div>
 </body>

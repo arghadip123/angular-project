@@ -1,16 +1,15 @@
 .header {
     background: linear-gradient(to right, #47a9e5, #0000ff);
     color: #fff;
-    padding: 10px;
-    position: re;
+    padding: 5px;
+    /* position: re; */
     width : 100%;
     top: 0;
-    z-index: 1;
 }
- /* .logo {
-    width: 100px;
+ .logo {
+    width: 75px;
     height:none;
- } */
+ }
 
 .text{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
