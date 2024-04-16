@@ -1,13 +1,16 @@
  .container {
-  width: calc(100% - 20px);
-  height:calc(100% - 40px);
+  /* width: 100%;
+  height:100%;
+  display: flex;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #c7d8e076;
-  
-  position: relative;
+  background-color: hsl(231, 24%, 94%);
+  position: relative; */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .center {
@@ -15,19 +18,18 @@
 }
 
 button {
-  width: 80%;
-  padding: 15px;
-  border: none;
-  margin : 10px;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #f1f4f5;
+  width: 100%;
   cursor: pointer;
-
   position: relative;
-  top:60%;
-  left: 50%;
-  transform: translate(+50%, -50%)
+  background-color: #007bff; /* Button Background Color */
+  color: #fff; /* Button Text Color */
+  padding: 10px 20px; /* Button Padding */
+  border: none; /* Remove Button Border */
+  border-radius: 10px; /* Button Border Radius */
+  font-size: 16px; /* Button Font Size *
+  top:30%;
+  left:20%;
+  /* transform: translate(+120%, -50%) */
   
   
 }
@@ -38,11 +40,11 @@ button:hover {
 
 .form-box {
   width: 100%;
-  max-width: 100px;
+  max-width: 50px;
   margin: 10px;
   font-family: Arial, sans-serif;
   display: grid;
-  grid-template-columns: 120px 200px; 
+  grid-template-columns: 300px 200px; 
   align-items: center; 
 }
 
@@ -74,13 +76,13 @@ input[type="submit"]:hover {
 }
 
 textarea.address {
-  width: 100%; /* Set the width as desired */
-  height: 100px; /* Set the fixed height */
-  resize: none; /* Prevent resizing */
-  padding: 7px;
+  width: 200px; /* Set the width as desired */
+  height: 150px; /* Set the fixed height */
+  resize: none;
+  padding: 10px;
   margin-top: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   box-sizing: border-box;
 }
 

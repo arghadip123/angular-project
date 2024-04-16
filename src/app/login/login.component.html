@@ -16,10 +16,14 @@
       <div class="div1">
         <span><i class="icon2 fa-solid fa-envelope fa-lg"></i></span>
         <span><input type="text" id="email" placeholder="enter your email id" required></span>
+        <div *ngIf="loginForm.get('email-id')?.invalid && loginForm.get('email-id')?.touched"></div>
+        <span *ngIf="loginForm.get('email-id') email-id">Invalid email-id format</span>
       </div>
       <div class="div1">
         <span><i class="icon fa fa-mobile fa-lg"></i> </span>
         <span> <input type="number" id="mobile" name="mobile" pattern="[0-9]{10}"  max="9999999999" placeholder="enter your 10 digit mobile no" required></span>
+        <div *ngIf="loginForm.get('email-id')?.invalid && loginForm.get('email-id')?.touched"></div>
+        <span *ngIf="loginForm.get('email-id') mobile number">Invalid mobile number  format</span>
       </div>
       <div>
         <!-- <label for="otp">Enter OTP:</label>

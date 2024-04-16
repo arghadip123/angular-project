@@ -2,13 +2,17 @@
     background: linear-gradient(to right, #47a9e5, #0000ff);
     color: #fff;
     padding: 10px;
-    position: re;
+    position: relative;
     width : 100%;
-    top: 0;
+    /* top: 0; */
     z-index: 1;
+    display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
 }
+
  /* .logo {
-    width: 100px;
+    width: 200px;
     height:none;
  } */
 

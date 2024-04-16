@@ -9,7 +9,7 @@ import { RegistrationComponent } from './registration/registration.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,LoginComponent,OtpComponent,FooterComponent,HeaderComponent,RegistrationComponent],
+  imports: [RouterOutlet,LoginComponent,OtpComponent,HeaderComponent,FooterComponent,RegistrationComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 
