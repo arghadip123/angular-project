@@ -1,17 +1,20 @@
 .header {
-    background: linear-gradient(to right, #47a9e5, #0000ff);
-    color: #fff;
+    background: linear-gradient(to right, #1f92df, #1212e5e3);
+    color: #ffffff;
     padding: 5px;
-    /* position: re; */
     width : 100%;
-    top: 0;
+    height: 150px;
+    border-bottom: 3px solid white;
 }
- .logo {
-    width: 75px;
-    height:none;
- }
+.logo {
+    width: 80px;
+    translate: 20% 15% ;
+}
 
-.text{
+
+h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 5%;   
+    padding-left: 50px;   
+    display: inline;
+
 }

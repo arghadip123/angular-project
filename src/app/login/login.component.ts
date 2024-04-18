@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,5 +9,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-
+  private _router: Router;
+    constructor(_router: Router) {
+        this._router = _router;
+    }
+  submitform(){
+    this._router.navigateByUrl('/otp');
+  }
 }

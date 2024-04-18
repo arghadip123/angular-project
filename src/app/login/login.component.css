@@ -1,17 +1,6 @@
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
     .container {
-      /* background-color: ; */
-      background: white;
+      background: rgb(255, 255, 255);
       height: 350px;
       padding: 20px;
       border-radius: 12px;
@@ -37,6 +26,9 @@ input[type="password"] {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  
+  margin-right: 0;
+  
 }
 
 input[type="number"] {
@@ -58,15 +50,13 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-.button-primary {
-  /* background-color: #007bff; */
+/* .button-primary {
   color: red;
   background-color: white;
 }
 .button-primary:hover {
-  /* background-color: #0056b3; */
   color: rgb(125, 6, 6);
-}
+} */
 .button-otp {
   background-color:#4CAF50;
   width: 25%;
@@ -97,3 +87,42 @@ button {
 .div1{
   position: relative;
 }
+
+.background{
+  background-color: rgba(128, 128, 128, 0.285);
+  padding:9px;
+  margin: 5px;
+  border-radius: 5px;
+  border:  black;
+  width: 30px;
+  margin-left: 0px;
+  margin-top: 0px;
+  height: 42px;
+
+}
+
+.mobile{
+  border: 1px solid grey ;
+  border-radius: 5px;
+  height: 43px;
+}
+
+.mobilebox{
+  margin-top: 0px;
+  margin-left: 30px;
+  height: 30px;
+  transform: translateY(-47px);
+}
+
+.reg{
+  color: red;
+  text-decoration: none;
+}
+
+.reg:hover{
+  
+  color: rgb(125, 6, 6);
+}
+
+
+

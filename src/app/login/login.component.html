@@ -10,32 +10,31 @@
 </head>
 <body>
   <div class="container">
-    <h3 class="center" style="color: rgb(10, 139, 55) ">User Login</h3>
-    <br>
-    <form action="./otp" method="post" >
-      <div class="div1">
-        <span><i class="icon2 fa-solid fa-envelope fa-lg"></i></span>
-        <span><input type="text" id="email" placeholder="enter your email id" required></span>
+    <h3 class="center" style="color: rgb(10, 139, 55) ">User Login</h3>  <br>
+    <!-- <form > -->
+      <div class="mobile">
+          <div class="background"> <i class="fa fa-mobile"> </i> </div>
+          <div class="mobilebox"> 
+            <input name="username" id="username" class="form-control" placeholder="10 Digit Mobile Number" pattern="[0-9]{10}" type="text" required="required" data-error="Please enter your User ID">
+          </div>
       </div>
-      <div class="div1">
-        <span><i class="icon fa fa-mobile fa-lg"></i> </span>
-        <span> <input type="number" id="mobile" name="mobile" pattern="[0-9]{10}"  max="9999999999" placeholder="enter your 10 digit mobile no" required></span>
-      </div>
-      <div>
-        <!-- <label for="otp">Enter OTP:</label>
-        <input type="text" id="otp" name="otp" required> -->
-        <button type="submit" class="button-otp" style = "font-size: small"  >Get OTP</button>
 
+      <br>
+
+      <div>
+        <button type="button" (click)=(submitform) class="button-otp" style = "font-size: small" >Get OTP </button>
+        
       </div>
       <br> <br>
-
-    </form>
+    <!-- </form> -->
     
-    <div class="center"> 
-      <!-- <button type="submit" class="button-secondary">Login</button> -->
-      
-      <p> didn't have an account? <button type="submit" class="button-primary"  routerLink="/signin"> Sign in </button> </p>
+    <div style="text-align: center;">
+      <p > don't have an account?</p> 
+      <a class="reg" routerLink='/signin' >Sign in </a>
     </div>
-  </div>
+    
+    
+
+</div>
 </body>
 </html>
